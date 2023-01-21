@@ -5,7 +5,7 @@ id_pattern = re.compile(r'^.\d+$')
 # get a token from @BotFather
 TOKEN = os.environ.get("TOKEN", "")
 # The Telegram API things
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("API_ID", ""))
 API_HASH = os.environ.get("API_HASH", "")
 #Array to store users who are authorized to use the bot
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
